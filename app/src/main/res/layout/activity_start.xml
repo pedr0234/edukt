@@ -18,28 +18,28 @@
         android:id="@+id/all"
         android:layout_height="@dimen/answerBtn_height"
         android:layout_width="@dimen/answerBtn_width"
-        android:text="All"
+        android:text="Maestro"
         android:layout_marginTop="100dp"
         android:onClick="startQuiz"/>
     <Button
         android:id="@+id/asia"
         android:layout_height="@dimen/answerBtn_height"
         android:layout_width="@dimen/answerBtn_width"
-        android:text="Asia"
+        android:text="Facil"
         android:layout_marginTop="30dp"
         android:onClick="startQuiz"/>
     <Button
         android:id="@+id/mexico"
         android:layout_height="@dimen/answerBtn_height"
         android:layout_width="@dimen/answerBtn_width"
-        android:text="Mexico"
+        android:text="Medio"
         android:layout_marginTop="30dp"
         android:onClick="startQuiz"/>
     <Button
         android:id="@+id/usa"
         android:layout_height="@dimen/answerBtn_height"
         android:layout_width="@dimen/answerBtn_width"
-        android:text="USA"
+        android:text="Dificil"
         android:layout_marginTop="30dp"
         android:onClick="startQuiz"/>
 

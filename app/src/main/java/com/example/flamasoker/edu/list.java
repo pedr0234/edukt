@@ -39,7 +39,7 @@ public class list extends AppCompatActivity {
                         startActivity(intent);
                         break;
                     case 1:
-                        intent=new Intent(getApplicationContext(),Ejercicios.class);
+                        intent=new Intent(getApplicationContext(),StartActivity.class);
                         startActivity(intent);
                         break;
                     case 2:

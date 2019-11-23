@@ -70,7 +70,7 @@ public class QuizApp extends AppCompatActivity {
         answerBtn3 = (Button) findViewById(R.id.answerBtn3);
         answerBtn4 = (Button) findViewById(R.id.answerBtn4);
 
-        int quizCategory = getIntent(). getIntExtra("QUIZ_CATGORY", 0);
+        int quizCategory = getIntent(). getIntExtra("QUIZ_CATEGORY", 0);
         Log.v("CATEGORY_TAG", quizCategory + "");
 
         for (int i = 0; i < quizData.length; i++) {
@@ -127,9 +127,8 @@ public class QuizApp extends AppCompatActivity {
             public void onClick(DialogInterface dialogInterface, int i) {
                 if (quizCount == QUIZ_COUNT){
                     Intent intent = new Intent(getApplicationContext(),ResultActivity.class);
-                    intent.putExtra("RIGHT_ANSWER_COUNT", rightAnswer);
+                    intent.putExtra("RIGHT_ANSWER_COUNT", rightAnswerCount);
                     startActivity(intent);
-
                 }else{
                     quizCount++;
                     showNextQuiz();
