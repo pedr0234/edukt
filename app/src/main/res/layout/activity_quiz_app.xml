@@ -56,5 +56,13 @@
         android:text="Respuesta 4"
         android:layout_marginTop="6dp"
         android:onClick="checkAnswer"/>
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flecha"
+        android:background="#376168"/>
 </android.support.v7.widget.LinearLayoutCompat>
 
