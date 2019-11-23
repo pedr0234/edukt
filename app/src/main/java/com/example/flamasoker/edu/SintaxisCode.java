@@ -48,7 +48,7 @@ public class SintaxisCode extends AppCompatActivity implements View.OnClickListe
         }
     }
     public void returnTop(View view) {
-        startActivity(new Intent(this, SintaxisCodeJ.class));
+        startActivity(new Intent(getApplicationContext(), SintaxisCodeJ.class));
     }
 }
 
