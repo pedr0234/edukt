@@ -39,9 +39,7 @@
 
         android:layout_marginTop="6dp"
         android:onClick="checkAnswer"/>
-    =======
-    android:layout_marginTop="6dp"/>
-    >>>>>>> c1129dfb9d08f28a255fd79f80a4caa5a2384d1e
+
     <Button
         android:id="@+id/answerBtn3"
         android:layout_width="@dimen/answerBtn_width"

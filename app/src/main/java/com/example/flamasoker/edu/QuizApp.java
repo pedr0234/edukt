@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+
 import android.view.View;
 
 
@@ -34,15 +36,25 @@ public class QuizApp extends AppCompatActivity {
     ArrayList<ArrayList<String>> quizArray = new ArrayList<>();
     String quizData[][] = {
             //{"Pais", "Right Answer", "Choice1", "Choice2", "Choice3"}
-            {"China", "Beijin", "Jakarta", "Manila", "Stockholm"},
-            {"Indian", "New Delhi", "Beijing", "Bangkok", "Seul"},
-            {"Indonesia", "Jakarta", "Manila", "New Delhi", "Kuala Lumpur"},
-            {"Japan", "Tokyo", "Bangkok", "Taipei", "Jakarta"},
-            {"Thailandia", "Bangkok", "Berlin", "Havana", "Kingston"},
-            {"Brasil", "Brasilia", "Havana", "Bangkok", "Copenhangen"},
-            {"USA", "Washinton D.C", "San Jose", "Buenos Aires", "Stockholm"},
-            {"France", "Paris", "Ottawa", "Paris", "Atenas"},
-            {"Italy", "Rome", "London", "Rome", "Singapore"},
+            {"2*5", "10", "5", "15", "7"},
+            {"25/2", "12.5", "12", "11", "15"},
+            {"50/2+5", "30", "1", "10", "15"},
+            {"5^2", "25", "10", "7", "100"},
+            {"2^3*10", "80", "16", "11", "15"},
+            {"2-5", "-3", "12", "11", "15"},
+            {"15-15", "0", "12", "1", "5"},
+            {"2+10/3", "4", "2", "11", "1"},
+            {"5/2+0.5", "3", "12", "11", "15"},
+            {"25/2", "12.5", "12", "11", "15"},
+            {"5*4/2", "10", "2", "1", "15"},
+            {"25/2", "12.5", "12", "11", "15"},
+            {"2+1", "3", "112", "1", "35"},
+            {"25/2", "12.5", "12", "11", "15"},
+            {"25/2", "12.5", "12", "11", "15"},
+
+
+
+
     };
 
 
@@ -57,6 +69,9 @@ public class QuizApp extends AppCompatActivity {
         answerBtn2 = (Button) findViewById(R.id.answerBtn2);
         answerBtn3 = (Button) findViewById(R.id.answerBtn3);
         answerBtn4 = (Button) findViewById(R.id.answerBtn4);
+
+        int quizCategory = getIntent(). getIntExtra("QUIZ_CATEGORY", 0);
+        Log.v("CATEGORY_TAG", quizCategory + "");
 
         for (int i = 0; i < quizData.length; i++) {
             ArrayList<String> tmpArray = new ArrayList<>();
@@ -112,7 +127,7 @@ public class QuizApp extends AppCompatActivity {
             public void onClick(DialogInterface dialogInterface, int i) {
                 if (quizCount == QUIZ_COUNT){
                     Intent intent = new Intent(getApplicationContext(),ResultActivity.class);
-                    intent.putExtra("RIGHT_ANSWER_COUNT", rightAnswer);
+                    intent.putExtra("RIGHT_ANSWER_COUNT", rightAnswerCount);
                     startActivity(intent);
 
                 }else{
