@@ -129,6 +129,7 @@ public class QuizApp extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(),ResultActivity.class);
                     intent.putExtra("RIGHT_ANSWER_COUNT", rightAnswerCount);
                     startActivity(intent);
+
                 }else{
                     quizCount++;
                     showNextQuiz();
