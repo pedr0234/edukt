@@ -19,7 +19,7 @@ import org.json.JSONObject;
 
 public class ApiRest extends AppCompatActivity {
 
-    private TextView mTextViewResult;
+    private TextView titulo,cuento;
     private RequestQueue mQueue;
 
 
@@ -28,17 +28,19 @@ public class ApiRest extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_api_rest);
 
-        mTextViewResult = findViewById(R.id.text_view_result);
-        Button buttonParse = findViewById(R.id.button_parse);
-
+        titulo= findViewById(R.id.titulo);
+        cuento=findViewById(R.id.cuento);
         mQueue = Volley.newRequestQueue(this);
 
-        buttonParse.setOnClickListener(new View.OnClickListener() {
+     /*   buttonParse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 jsonParse();
             }
         });
+
+      */
+        jsonParse();
     }
     private void jsonParse(){
         String url = "http://coffeefood.com.mx/coffeefood.com.mx/kaab/authors";
@@ -51,15 +53,18 @@ public class ApiRest extends AppCompatActivity {
                         try {
                             JSONArray jsonArray = response.getJSONArray("data");
 
-                            for (int i =0; i < jsonArray.length(); i++){
+                            int i =0;
                                 JSONObject data = jsonArray.getJSONObject(i);
                                 int id= data.getInt("id");
                                 String Author = data.getString("Author");
                                 String Titulo = data.getString("Titulo");
                                 String Libro = data.getString("Libro");
 
-                                mTextViewResult.append(id + ", " + String.valueOf(Author) + ", "+ Titulo +", " + Libro +"\n\n");
-                            }
+                           //     mTextViewResult.append("texto num."+id+ " " + String.valueOf(Author) + "\n"+ Titulo +"\n" + Libro +"\n\n");
+
+                            titulo.append(Titulo);
+                            cuento.append(Libro);
+
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }

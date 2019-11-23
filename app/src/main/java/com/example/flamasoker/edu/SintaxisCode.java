@@ -19,9 +19,12 @@ public class SintaxisCode extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sintaxis_code);
 
+        backButton=findViewById(R.id.backButton);
         result=findViewById(R.id.result);
+
         validation=findViewById(R.id.validation);
         validation.setOnClickListener(this);
+        backButton.setOnClickListener(this);
         request=findViewById(R.id.request);
 
     }
