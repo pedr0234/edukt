@@ -26,7 +26,7 @@ public class ApiRest2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_api_rest);
+        setContentView(R.layout.activity_api_rest2);
 
         titulo= findViewById(R.id.titulo);
         cuento=findViewById(R.id.cuento);

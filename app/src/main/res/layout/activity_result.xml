@@ -36,12 +36,4 @@
         android:layout_marginTop="80dp"
         android:onClick="returnTop"/>
 
-    <ImageButton
-        android:id="@+id/backButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#376168"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/flecha" />
 </LinearLayout>
