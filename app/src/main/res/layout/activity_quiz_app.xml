@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizApp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/countLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q1"
+        android:textSize="22sp"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:id="@+id/questionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pregunta"
+        android:textSize="24sp"
+        android:layout_marginTop="60dp"/>
+    <Button
+        android:id="@+id/answerBtn1"
+        android:layout_width="@dimen/answerBtn_width"
+        android:layout_height="@dimen/answerBtn_height"
+        android:text="Respuesta 1"
+
+        android:layout_marginTop="80dp"
+        android:onClick="checkAnswer"/>
+    <Button
+        android:id="@+id/answerBtn2"
+        android:layout_width="@dimen/answerBtn_width"
+        android:layout_height="@dimen/answerBtn_height"
+        android:text="Respuesta 2"
+
+        android:layout_marginTop="6dp"
+        android:onClick="checkAnswer"/>
+    =======
+    android:layout_marginTop="6dp"/>
+    >>>>>>> c1129dfb9d08f28a255fd79f80a4caa5a2384d1e
+    <Button
+        android:id="@+id/answerBtn3"
+        android:layout_width="@dimen/answerBtn_width"
+        android:layout_height="@dimen/answerBtn_height"
+        android:text="Respuesta 3"
+
+        android:layout_marginTop="6dp"
+        android:onClick="checkAnswer"/>
+
+    <Button
+        android:id="@+id/answerBtn4"
+        android:layout_width="@dimen/answerBtn_width"
+        android:layout_height="@dimen/answerBtn_height"
+        android:text="Respuesta 4"
+        android:layout_marginTop="6dp"
+        android:onClick="checkAnswer"/>
+</android.support.v7.widget.LinearLayoutCompat>
+
