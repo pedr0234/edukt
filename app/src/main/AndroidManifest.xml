@@ -10,8 +10,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
         <activity android:name=".ApiRest"></activity>
+
+        <activity android:name=".ResultActivity"></activity>
+        <activity android:name=".QuizApp" />
+
         <activity android:name=".SintaxisCode" />
         <activity android:name=".CienciasNaturales" />
         <activity android:name=".LenguaMaterna" />

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class SintaxisCode extends AppCompatActivity implements View.OnClickListener {
@@ -12,6 +13,7 @@ public class SintaxisCode extends AppCompatActivity implements View.OnClickListe
     Button validation;
     TextView request;
     String correct;
+    ImageButton backButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +37,9 @@ public class SintaxisCode extends AppCompatActivity implements View.OnClickListe
                     }else{
                         request.setText("Vuelve a intentarlo");
                     }
+                break;
+            case R.id.backButton:
+                finish();
                 break;
         }
     }

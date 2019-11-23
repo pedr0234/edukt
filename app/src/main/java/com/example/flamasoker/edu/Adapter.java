@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
- * Created by Flamasoker on 18/11/2019.
+ * Created by Flamasoker on 18/11/2019. hola
  */
 
 public class Adapter extends BaseAdapter{
