@@ -1,6 +1,5 @@
 package com.example.flamasoker.edu;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,16 +8,16 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class SintaxisCode extends AppCompatActivity implements View.OnClickListener {
-    EditText result;
-    Button validation;
-    TextView request;
-    String correct;
-    ImageButton backButton;
+public class SintaxisCodeJ extends AppCompatActivity implements View.OnClickListener {
+     private EditText result;
+    private Button validation;
+    private TextView request;
+    private String correct;
+    private ImageButton backButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sintaxis_code);
+        setContentView(R.layout.activity_sintaxis_code_j);
 
         backButton=findViewById(R.id.backButton);
         result=findViewById(R.id.result);
@@ -35,20 +34,16 @@ public class SintaxisCode extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case R.id.validation:
 
-                        correct= String.valueOf(result.getText());
-                    if (correct.equals("<?php")){
-                        request.setText("Correcto");
-                    }else{
-                        request.setText("Vuelve a intentarlo");
-                    }
+                correct= String.valueOf(result.getText());
+                if (correct.equals("String")){
+                    request.setText("Correcto");
+                }else{
+                    request.setText("Vuelve a intentarlo");
+                }
                 break;
             case R.id.backButton:
                 finish();
                 break;
         }
     }
-    public void returnTop(View view) {
-        startActivity(new Intent(this, SintaxisCodeJ.class));
-    }
 }
-

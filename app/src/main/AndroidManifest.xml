@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".SintaxisCodeJ"></activity>
         <activity android:name=".ApiRest" />
         <activity android:name=".ResultActivity" />
         <activity android:name=".QuizApp" />
@@ -23,18 +24,17 @@
         <activity android:name=".NivelesArit" />
         <activity android:name=".Inicio">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".NaviationDrawerMain"
             android:label="@string/title_activity_naviation_drawer_main"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".list" />
-        <activity android:name=".StartActivity">
-        </activity>
+        <activity android:name=".StartActivity"></activity>
     </application>
 
 </manifest>
