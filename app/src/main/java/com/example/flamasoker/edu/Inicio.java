@@ -24,7 +24,7 @@ public class Inicio extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.ready:
-                Intent i = new Intent(this, list.class);
+                Intent i = new Intent(this, ApiRest.class);
                 startActivity(i);
                 break;
         }

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.flamasoker.edu">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".SintaxisCode"></activity>
+        <activity android:name=".ApiRest"></activity>
+        <activity android:name=".SintaxisCode" />
         <activity android:name=".CienciasNaturales" />
         <activity android:name=".LenguaMaterna" />
         <activity android:name=".ConcluidoNivel" />
