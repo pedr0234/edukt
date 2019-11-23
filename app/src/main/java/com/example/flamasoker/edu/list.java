@@ -35,7 +35,7 @@ public class list extends AppCompatActivity {
                 Intent intent;
                 switch (position){
                     case 0:
-                        intent=new Intent(getApplicationContext(),ApiRest.class);
+                        intent=new Intent(getApplicationContext(),LenguaMaterna.class);
                         startActivity(intent);
                         break;
                     case 1:
